@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF - 8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initical-scale=1.0">
+    <title>  fadeIn, fadeOut, fadeTo</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    
+    </script>
+</head>
+<style>
+    #test {
+        width: 200px;
+        height: 200px;
+        background-color: darkturquoise;
+    }
+        a, button,input[id="hilang"],input[id="muncul"], input[id="to"]{
+        font-family: monospace;
+        font-size: 12px;
+        background: lightgrey;
+        color: bl;
+        border: black 3px solid;
+        border-radius: 3px;
+        padding: 10px 15px;
+        margin-top: 8px;
+    }
+    a {
+        text-decoration: none;
+    }
+     
+</style>
+<body>
+    <div id="test"></div>
+    <button id="hilang">Fade In</button> 
+    <button id="muncul">Fade Out</button>
+    <button id="to">Fade To</button>
+</body>
+<script>
+     $(document).ready(function(){
+        $("#hilang").click(function(){
+            $("#test").fadeOut(300);
+
+        });
+     });
+    $(document).ready(function(){
+        $("#muncul").click(function(){
+            $("#test").fadeIn(300);
+
+        });
+     });
+     $(document).ready(function(){
+        $("#to").click(function(){
+            $("#test").fadeTo(300, 0.4);
+        });
+     });
+</script>
+</html>

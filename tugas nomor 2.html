@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Nomor 2</title>
+	<h3>Klik 2x pada setiap kotak untuk mengubah warnanya!</h3>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			margin: 10px;
+			float: left;
+		}
+		.merah{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+    	var kondisi = false;
+    	$(document).ready(function(){
+    		$(".box1").dblclick(function(){
+    			if (kondisi = true) {
+    				$(".box1").addClass("merah");
+    				kondisi = false;
+    			} else {
+    				$(".box1").removeClass("merah");
+    				kondisi = true;
+    			}
+    		});
+
+    		$(".box2").dblclick(function(){
+    			if (kondisi = true) {
+    				$(".box2").addClass("merah");
+    				kondisi = false;
+    			} else {
+    				$(".box2").removeClass("merah");
+    				kondisi = true;
+    			}
+    		});
+
+    		$(".box3").dblclick(function(){
+    			if (kondisi = true) {
+    				$(".box3").addClass("merah");
+    				kondisi = false;
+    			} else {
+    				$(".box3").removeClass("merah");
+    				kondisi = true;
+    			}
+    		});
+    	});
+    </script>
+</body>
+</html>
